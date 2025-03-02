@@ -26,19 +26,18 @@ logging.basicConfig(level=logging.INFO,
 def process_files(input_path, errored_path, processed_path, conn):
     # Step 1
     if not os.path.isdir(input_path):
-        logging.error(
-            f"The path {input_path} is not a valid directory for Input files.")
+        logging.error(f"The path {input_path} is not a valid directory for Input files.")
         return
 
     if not os.path.isdir(processed_path):
-        logging.error(
-            f"The path {processed_path} is not a valid directory Error files.")
-        return
+        logging.warning(f"The path {processed_path} is not a valid directory Processed files.")
+        os.makedirs(processed_path)
+        
 
     if not os.path.isdir(errored_path):
-        logging.error(
-            f"The path {errored_path} is not a valid directory Processed files.")
-        return
+        logging.warning(f"The path {errored_path} is not a valid directory Errored files.")
+        os.makedirs(errored_path)
+         
 
     # Step 2
     files = os.listdir(input_path)

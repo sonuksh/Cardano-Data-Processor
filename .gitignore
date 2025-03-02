@@ -10,3 +10,6 @@ __pycache__/
 # other files
 .vscode
 .DS_Store
+
+data/errored/
+data/processed/
