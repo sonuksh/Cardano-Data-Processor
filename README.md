@@ -39,11 +39,14 @@ Cardano-Data-Processor/
 │── requirements.txt                    # Dependencies for the project
 │── README.md                           # Project documentation (this file)
 ```
+## Software Requirements :
+1. Python 3
+2. Pip3
 
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/my_project.git
+   git clone git@github.com:sonuksh/Cardano-Data-Processor.git
    cd  cardano-data-processor
 
 
