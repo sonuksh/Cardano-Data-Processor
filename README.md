@@ -47,17 +47,22 @@ Cardano-Data-Processor/
 1. Clone the repository:
    ```bash
    git clone git@github.com:sonuksh/Cardano-Data-Processor.git
-   cd  cardano-data-processor
+   cd  Cardano-Data-Processor
 
 
 2. Install dependencies:
-    pip install -r requirements.txt
-
+   ```
+   pip3 install -r requirements.txt
+   ``` 
 3. Run the app:
-    python app/main.py
+   ```
+   python3 app/main.py
+   ```
 
 4. Run the tests:
-    python -m pytest
+   ```
+    python3 -m pytest
+   ```
     
  
 ---
