@@ -59,7 +59,6 @@ def process_transactions(transactions, conn):
     for batch in batched(transactions_list, 1000):
         try:
             cursor.executemany(query, batch)  # Bulk operation
-            cursor.executemany(query, transactions_list)
             transactions_count = cursor.rowcount
             conn.commit()
             logging.info(
@@ -68,7 +67,7 @@ def process_transactions(transactions, conn):
         except Exception as e:
             logging.info("Error inserting data:", e)
             raise e
-
+    cursor.close()
 
 # 1 - Checks if notional and exchange rate fields are numeric , remove all rows where these fields are NAN or Null.
 # 2 - Remove rows where transaction_uti is empty string or Null.
