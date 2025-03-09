@@ -1,6 +1,7 @@
 import config
 import logging
 import sqlite3
+from datetime import datetime
 from db_handler import setup_database, get_db_connection
 from display_data import display_transactions_pretty
 from file_processor import process_files
