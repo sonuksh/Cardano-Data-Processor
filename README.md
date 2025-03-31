@@ -1,7 +1,7 @@
 # Cardano Data Processor
 
 ## Overview
-The Cardano Data Processor is a Python-based application designed to read, validate, process, and store transactions from multiple file formats (CSV, JSON, and XML) into an SQLite database. It performs data validation, currency conversion, and ensures transactional integrity using an upsert strategy.
+The Cardano Data Processor is a Python-based application designed to read, validate, process, and store transactions from multiple file formats (CSV, JSON, and XML) into a SQLite database. It performs data validation, currency conversion, and ensures transactional integrity using an upsert strategy.
 
 ## Features
 - **Supports CSV, JSON, and XML file formats**
